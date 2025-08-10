@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>K-Pop Demon Hunter Quiz</title>
+  <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+
+  <!-- Navbar (optional, if you want to keep same nav) -->
+  <nav class="navbar">
+    <div class="logo">K-Pop Demon Quiz</div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+    </ul>
+  </nav>
+
+  <!-- Quiz Wrapper -->
+  <main class="quiz-wrapper">
+    <section class="quiz-header">
+      <h1>Which K-Pop Demon Hunter Are You?</h1>
+      <p>Answer 15 quick questions to discover your match!</p>
+    </section>
+
+    <!-- Quiz Container -->
+    <section id="quiz-container" class="quiz-card">
+      <div id="quiz-question" class="quiz-question"></div>
+      <div id="quiz-answers" class="quiz-answers"></div>
+
+      <!-- Navigation -->
+      <div class="quiz-navigation">
+        <button type="submit" id="submit-btn" class="btn quiz-btn" style="display:none;" >See Result</button>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="quiz-progress">
+        <div id="quiz-progress-bar"></div>
+      </div>
+    </section>
+
+    <!-- Result Box -->
+    <section id="quiz-result" class="quiz-result" style="display:none;">
+      <h2>Your K-Pop Demon Hunter Match Is...</h2>
+      <div class="result-card">
+        <img id="result-image" alt="Character Image" class="result-img">
+        <h3 id="result-name"></h3>
+        <p id="result-description"></p>
+      </div>
+      <div class="result-actions">
+        <button type="reset" id="restart-btn" class="btn quiz-btn">Retake Quiz</button>
+        <button type="button" id="share-btn" class="btn quiz-btn">Share Result</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2025 K-Pop Demon Hunters Fan Quiz. Created for fans by Teulue.</p>
+  </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
